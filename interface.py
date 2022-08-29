@@ -1,9 +1,5 @@
 import tkinter as tk
 from tkinter import ttk
-from tkinter import *
-import os
-import sys
-import binary_tree
 
 # root window
 root = tk.Tk()
@@ -14,16 +10,8 @@ root.resizable(0, 0)
 # configure the grid
 root.columnconfigure(0, weight=1)
 root.columnconfigure(1, weight=3)
-'------------'
-'import binarneho stromu'
-def run():
-    os.system('binary_tree.py')
-
-btn = Button(root, text="Binary Tree", bg="black", fg="white",command=run)
-btn.grid(column=0, row=0)
 
 
-'-----------'
 # username
 username_label = ttk.Label(root, text="PK kody:")
 username_label.grid(column=0, row=0, sticky=tk.W, padx=5, pady=5)
@@ -93,10 +81,8 @@ pk_entry = ttk.Entry(root)
 pk_entry.grid(column=0, row=20, sticky=tk.E, padx=5, pady=5)
 
 
-
-
 window = root
-'''output window'''
+
 txt_edit = tk.Text(window)
 frm_buttons = tk.Frame(window, relief=tk.RAISED, bd=2)
 
@@ -132,36 +118,6 @@ ttk.Checkbutton(root,
 
 ''''jjjj'''
 # password
-
-
-root.mainloop()
-
-# exit button
-exit_button = ttk.Button(
-    root,
-    text='Huffman coding',
-    command=lambda: root.quit()
-)
-
-exit_button = ttk.Button(
-    root,
-    text='Huffman coding',
-    command=lambda: root.quit()
-)
-
-
-exit_button.pack(
-    ipadx=10,
-    ipady=10,
-    expand=True
-)
-
-exit_button.pack(
-    ipadx=5,
-    ipady=5,
-    expand=True
-)
-
 
 
 root.mainloop()
